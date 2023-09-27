@@ -1,0 +1,161 @@
+/* Refactored CSS with updated class names */
+
+.new-home {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+.New-Home-s {
+    width: 100%;
+    height: 100vh;
+}
+
+.new-home nav {
+    display: flex;
+    height: 100px;
+    justify-content: space-around;
+    align-items: center;
+    position: fixed;
+    right: -100px;
+    left: -100px;
+    background: white;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    z-index: 1000;
+}
+
+.new-home nav .new-logo img {
+    width: 110px;
+    cursor: pointer;
+    /* left: 100px; */
+    margin: 12px 0px 20px;
+    margin: 0;
+}
+
+.new-home nav ul {
+    list-style: none;
+}
+
+.new-home nav ul li {
+    display: inline-block;
+    margin: 10px 15px;
+}
+
+.new-home .New-Home-s  ul li.active{
+    color: #fac031;
+}
+
+.new-home nav ul li a {
+    text-decoration: none;
+    color: #000;
+    font-weight: 500;
+    font-size: 17px;
+    transition: 0.1s;
+}
+
+.new-home nav ul li a::after {
+    content: '';
+    width: 0;
+    height: 2px;
+    background: #fac031;
+    display: block;
+    transition: 0.2s linear;
+}
+
+.new-home nav ul li a:hover::after {
+    width: 100%;
+}
+
+.new-home nav ul li a:hover {
+    color: #fac031;
+}
+
+.new-home nav .new-icon i {
+    font-size: 18px;
+    color: #000;
+    margin: 0 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.new-home nav .new-icon i:hover {
+    color: #fac031;
+}
+
+.new-home .new-main-h {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    position: relative;
+    top: 100px;
+}
+
+.new-home .new-main-h .new-men_text h1 {
+    font-size: 60px;
+    position: relative;
+    top: -120px;
+    left: 20px;
+}
+
+.new-home .new-main-h .new-men_text h1 span {
+    margin-left: 15px;
+    color: #fac031;
+    font-family: mv boli;
+    line-height: 22px;
+    font-size: 70px;
+}
+
+.new-home .new-main-h .new-main_image img {
+    width: 700px;
+    position: relative;
+    left: 70px;
+}
+
+.new-home p {
+    width:550px;
+    text-align: justify;
+    position: relative;
+    left: 60px;
+    bottom: 190px;
+    line-height: 18px;
+}
+
+.new-home .new-main_btn {
+    background: #fac031;
+    position: relative;
+    left: 60px;
+    bottom: 150px;
+    width: 200px;
+    cursor: pointer;
+    padding: 12px 25px;
+}
+.new-home .new-main_btn:hover{
+    background-color: #000;
+    
+}
+
+.new-home .new-main_btn a {
+    color: #fff;
+    text-decoration: none;
+    margin-right: 5px;
+}
+
+.new-home .new-main_btn i {
+    color: #fff;
+    transition: 0.3s;
+}
+
+.new-home .new-main_btn:hover i {
+    transform: translateX(7px);
+}
+.privacy{
+    
+    text-align: center;
+    color: grey;
+    font-size: small;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.active{
+    color: #fac031;
+}
